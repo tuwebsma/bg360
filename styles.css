@@ -553,7 +553,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(6, 6, 8, 0.4) 0%, rgba(6, 6, 8, 0.2) 50%, rgba(6, 6, 8, 0.92) 100%), url('assets/bg360_banner_HD.webp');
+    background-image: linear-gradient(to bottom, rgba(6, 6, 8, 0.4) 0%, rgba(6, 6, 8, 0.2) 50%, rgba(6, 6, 8, 0.92) 100%), url('assets/bg360_banner_HD.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
