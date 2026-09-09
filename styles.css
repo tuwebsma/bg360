@@ -3,7 +3,6 @@
    ========================================================================== */
 
 
-
 /* DESIGN SYSTEM VARIABLES */
 :root {
     --font-solomon-heavy: 'Outfit', sans-serif;
@@ -797,6 +796,7 @@ textarea {
     }
 }
 
+/* Cursos */
 .workshops-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -814,7 +814,6 @@ textarea {
 .workshops-grid:has(.workshop-card:only-child) {
     grid-template-columns: minmax(0, 800px);
 }
-
 
 
 .workshop-date {
@@ -983,9 +982,7 @@ textarea {
     line-height: 1.4;
 }
 
-/* ==========================================================================
-   2. SECCIÓN ABONOS (REFACTORIZACIÓN INTEGRAL)
-   ========================================================================== */
+/*  SECCIÓN ABONOS  */
 
 /* SEGMENTED CONTROL */
 .segmented-control-wrapper {
@@ -1032,7 +1029,7 @@ textarea {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* ESTADO ACTIVO: Fondo verde BG360, texto oscuro de alto contraste y glow */
+/* ESTADO ACTIVO*/
 .segmented-btn.active {
     background: var(--bg360-green);
     color: #060608 !important;
@@ -1040,7 +1037,7 @@ textarea {
     box-shadow: 0 0 22px var(--bg360-green-glow);
 }
 
-/* CONTENEDOR GRUPOS CON ANIMACION FLUIDA SIN TEMBLORES */
+/* CONTENEDOR GRUPOS */
 .pricing-cards-wrapper {
     position: relative;
     width: 100%;
@@ -1267,7 +1264,7 @@ textarea {
     margin-bottom: 1rem;
     color: var(--text-primary);
 }
-/* BLOQUE OPEN BOX (TARJETA INFORMATIVA SIMPLE DEBAJO DE LAS TARJETAS) */
+/* BLOQUE OPEN BOX  */
 .open-box-banner {
     display: flex;
     align-items: center;
@@ -1369,7 +1366,7 @@ textarea {
     flex: 1;
 }
 
-/* NUESTRO ESPACIO (FACILITIES) */
+/* NUESTRO ESPACIO */
 .facilities-section {
     background-color: var(--bg-secondary);
 }
@@ -1400,7 +1397,7 @@ textarea {
     transform: scale(1.05);
 }
 
-/* FAQ / ACCORDION */
+/* Preguntas frecuentes */
 .faq-accordion-container {
     max-width: 800px;
     margin: 0 auto;
@@ -1598,9 +1595,7 @@ textarea {
     opacity: 0.4;
 }
 
-/* ==========================================================================
-   6. NUEVA MINI SECCION — ALIANZAS / ASOCIADOS
-   ========================================================================== */
+/*  ALIANZAS / ASOCIADOS */
 .alliances-section {
     background-color: var(--bg-primary);
 }
@@ -2045,10 +2040,8 @@ textarea {
     transform: scale(1.25);
 }
 
-/* Mobile-specific carousel adjustments */
-/* =========================================================
-   TRAINER CAROUSEL - MOBILE
-   ========================================================= */
+
+/* TRAINER CAROUSEL (RESPONSIVE) */
 
 @media (max-width: 768px) {
 
@@ -2116,9 +2109,7 @@ textarea {
     }
 }
 
-/* ==========================================================================
-   3. RESPONSIVE DESIGN (SIN CORTE DE TARJETAS EN MOBILE & SIN SCROLL HORIZONTAL)
-   ========================================================================== */
+/* RESPONSIVE DESIGN  */
 
 @media (max-width: 1200px) {
     :root {
@@ -2253,7 +2244,7 @@ textarea {
         grid-template-columns: 1fr;
     }
 
-    /* PRECIOS EN MOBILE — 1 COLUMNA TOTALMENTE RESPONSIVA SIN DESBORDES */
+    /* PRECIOS EN MOBILE — 1 COLUMNA  */
     .pricing-grid,
     .flexi-grid,
     .other-services-grid {
@@ -2310,7 +2301,7 @@ textarea {
     transform: translateY(0);
 }
 
-/* ===== FIX MOBILE BG360 ===== */
+/* MOBILE BG360 */
 
 @media (max-width: 640px) {
 
@@ -2442,7 +2433,7 @@ textarea {
     transform: scale(0.94);
 }
 
-/* ===== FIX PLANES MENSUALES MOBILE ===== */
+/* PLANES MENSUALES MOBILE */
 @media (max-width: 640px) {
 
     .pricing-cards-wrapper{
@@ -2507,9 +2498,7 @@ textarea {
     }
 
 }
-/* =========================================================
-   FIX FLEXI PASS - MOBILE
-   ========================================================= */
+/* FLEXI PASS - MOBILE */
 @media (max-width: 640px) {
 
     .flexi-grid {
