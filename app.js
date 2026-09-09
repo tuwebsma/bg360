@@ -266,8 +266,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "assets/trainers/gonza1.webp",
             "assets/trainers/gonza2.webp",
             "assets/trainers/gonza3.webp",
-            "assets/space/compressed/IMG_5245.webp",
-            "assets/space/compressed/IMG_5465.webp"
+            "assets/space/compressed/IMG_5245.avif",
+            "assets/space/compressed/IMG_5465.avif"
         ],
         fran: [
             "assets/trainers/fran1.webp",
@@ -279,16 +279,16 @@ document.addEventListener('DOMContentLoaded', () => {
             "assets/trainers/mora1.webp",
             "assets/trainers/mora2.webp",
             "assets/trainers/mora3.webp",
-            "assets/trainers/IMG_2221.webp",
-            "assets/trainers/IMG_3757.webp",
-            "assets/trainers/IMG_3760.webp",
+            "assets/trainers/IMG_2221.avif",
+            "assets/trainers/IMG_3757.avif",
+            "assets/trainers/IMG_3760.avif",
             "assets/trainers/IMG_3771.webp"
 
         ],
         mauro: [
-            "assets/trainers/mauro1.webp",
-            "assets/trainers/mauro2.webp",
-            "assets/trainers/mauro3.webp"
+            "assets/trainers/mauro1.avif",
+            "assets/trainers/mauro2.avif",
+            "assets/trainers/mauro3.avif"
         ],
         milo: [
             "assets/trainers/milo1.webp",
@@ -501,7 +501,6 @@ const musicIcon = document.getElementById("musicIcon");
 let isPlaying = false;
 
 bgMusic.volume = 0.5;
-bgMusic.loop = true;
 
 // Cambia SOLO el ícono
 function updateMusicButton() {
