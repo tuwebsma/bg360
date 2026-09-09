@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Centro de Entrenamiento BG 360° en San Martín de los Andes. Fuerza, Powerlifting, Levantamiento Olímpico y preparación física personalizada para todas las edades.">
+    <meta name="author" content="BG 360°">
+    <title>BG 360° | Centro de Entrenamiento de Fuerza</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logos/Logo Azul oscuro.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- NAVIGATION BAR -->
+    <header class="main-header glass-effect">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <img src="assets/logos/Logo Azul oscuro.png" alt="BG 360° Centro de Entrenamiento" class="logo-img">
+            </a>
+            <div class="nav-header-actions">
+
+                <!-- BOTÓN MÚSICA -->
+                <button id="musicBtn" class="music-btn" aria-label="Reproducir música">
+                    <i id="musicIcon" class="fa-solid fa-circle-play"></i>
+                </button>
+
+                <a href="#inscripcion" class="btn btn-primary nav-header-btn">Inscribirme</a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- AUDIO DE FONDO -->
+    <audio id="bgMusic" loop>
+        <source src="assets/audio//Hawaii.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <!-- BACKDROP & SIDEBAR DRAWER (OUTSIDE HEADER TO PREVENT BLUR TRAP) -->
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <nav class="nav-menu" id="navMenu" aria-label="Menú principal">
+        <div class="nav-menu-header">
+            <span class="nav-menu-title">MENÚ</span>
+            <button class="nav-close-btn" id="navCloseBtn" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li><a href="#equipo" class="nav-link">Equipo</a></li>
+            <li><a href="#actividades" class="nav-link">Actividades</a></li>
+            <li><a href="#horarios" class="nav-link">Horarios</a></li>
+            <li><a href="#precios" class="nav-link">Precios</a></li>
+            <li><a href="#espacio" class="nav-link">Nuestro Espacio</a></li>
+            <li><a href="#faq" class="nav-link">Preguntas</a></li>
+            <li><a href="#alianzas" class="nav-link">Alianzas</a></li>
+            <li class="nav-cta-wrap"><a href="#inscripcion" class="btn btn-primary btn-block">Inscribirme</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge fade-in-up">CENTRO DE ENTRENAMIENTO</span>
+                <h1 class="hero-title fade-in-up">POTENCIA TU FUERZA.<br><span class="highlight">SUPERA TUS <br>
+                        LIMITES</span></h1>
+                <div class="hero-ctas fade-in-up">
+                    <a href="#equipo" class="btn btn-primary btn-lg">Clase de Prueba</a>
+                    <a href="#precios" class="btn btn-secondary btn-lg">Ver Planes</a>
+                </div>
+            </div>
+            <div class="hero-quick-info fade-in-up">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Av. Koessler 1992 (a metros del ACA)</p>
+                    </div>
+                </div>
+                <div class="info-item horarios-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Horarios</h4>
+                        <p>Lun a Vie: 08:00hs - 12:00 hs</p>
+                        <p>13:00hs - 21:30 hs</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+54 9 2944 82-4123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO (TEAM) SECTION -->
+    <section id="equipo" class="team-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">¿Quiénes somos?</span>
+                <h2 class="section-title">NUESTROS ENTRENADORES</h2>
+                <div class="divider"></div>
+                <p class="section-description">Gestiona tu clase de prueba con cualquiera de nuestros entrenadores.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- 1. Gonzalo -->
+                <div class="team-card glass-card fade-in-up" data-trainer="gonza">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/gonzalo.webp" alt="Entrenador Gonzalo" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Lorenzo Gonzalo</h3>
+                        <span class="member-role">Gonzalo Basualdo | Fundador y Entrenador</span>
+                        <p class="member-text">Fundador y entrenador de BG360, con años de experiencia en entrenamiento
+                            de fuerza, levantamiento olímpico, preparación física en deportes de combate, deportes de
+                            resistencia y deporte adaptado.<br>
+
+                            Mi trayectoria está vinculada a la formación y acompañamiento de atletas en deportes de
+                            resistencia como el Trail Running Running y pruebas de atletismo como lanzamiento de
+                            balas.<br>
+                            Especial compromiso en el desarrollo del deporte adaptado como entrenador de paraatletismo y
+                            el parapowerlifting (halterofilia adaptada).<br>
+
+                            Creo en el entrenamiento como una herramienta para desarrollar capacidades, autonomía y
+                            rendimiento .</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5491132422219" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/bg360.ok" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. Fran -->
+                <div class="team-card glass-card fade-in-up" data-trainer="fran">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/fran.webp" alt="Coach Fran (Francisco)" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Fran (Francisco)</h3>
+                        <span class="member-role">Coach de Rendimiento Deportivo y salud</span>
+                        <p class="member-text">Hola, soy Fran,
+                            Profesor de Educación Física y entrenador especializado en rendimiento deportivo y
+                            fuerza.<br>
+
+                            Especialidades:<br>
+                            -Preparación física para deportes de conjunto<br>
+                            -Entrenamiento de fuerza<br>
+                            -Levantamiento olímpico<br>
+                            -Salud y bienestar<br>
+                            -Estética y composición corporal</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5491153175430" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/franciscosanchhez" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- 3. Mora -->
+                <div class="team-card glass-card fade-in-up" data-trainer="mora">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/mora.webp" alt="Entrenadora Mora" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Mora</h3>
+                        <span class="member-role">Coach de Fuerza y Powerlifting</span>
+                        <p class="member-text">Soy Mora, entrenadora especializada en fuerza y salud. Mi objetivo es
+                            ayudarte a construir un hábito basado en el progreso, la motivación y la confianza.<br>
+
+                            Soy esa profe que probablemente tilden de exigente, pero también la que va a hacerte sonreír
+                            cuando termines una serie y descubras que podías mucho más de lo que pensabas.<br>
+
+                            Voy a confiar en vos, incluso cuando vos todavía no puedas hacerlo. Porque quiero que lo que
+                            construyas en el gimnasio te acompañe también afuera: que aprendas a enfrentar los desafíos
+                            con confianza, seguridad y creyendo, de verdad, que podés.</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5492972537685" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/morita_power" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Mauro -->
+                <div class="team-card glass-card fade-in-up" data-trainer="mauro">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/mauro.webp" alt="Entrenador Mauro" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Mauro</h3>
+                        <span class="member-role">Coach de Montaña y Acondicionamiento</span>
+                        <p class="member-text">Hola soy Mauro trabajo con entrenamiento personalizado adaptado a lo q
+                            estés buscando:<br>
+                            - Musculación entrenamiento de fuerza<br>
+                            - ⁠Preparación física en deportes <br>
+                            - ⁠Salud y fuerza para adultos mayores<br>
+                            - ⁠Preparación física en entrenamiento de montaña</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5492944202267" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/mauroaravena89" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Milo -->
+                <div class="team-card glass-card fade-in-up" data-trainer="milo">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/milo.webp" alt="Entrenador Milo" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Milo</h3>
+                        <span class="member-role">Entrenador</span>
+                        <p class="member-text">Hola, soy Milo. Me apasiona el entrenamiento de la fuerza y me
+                            especializo en Levantamiento de Pesas. Te acompaño en tu proceso de volverte mas fuerte y
+                            mas sano.</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5492972227030" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/milo.pesas" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. Flor -->
+                <div class="team-card glass-card fade-in-up">
+                    <div class="team-card-image">
+                        <img src="assets/trainers/flor.webp" alt="Psicóloga Flor" class="team-img">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="member-name">Flor</h3>
+                        <span class="member-role">CEO y Psicóloga Deportiva</span>
+                        <p class="member-text">Soy Flor, CEO del gimnasio y parte del equipo que hace que todo funcione
+                            detrás de escena. Me ocupo de la gestión administrativa, acompaño a quienes llegan por
+                            primera vez y soy muchas veces el puente entre nuestros alumnos y los entrenadores. Mi lugar
+                            es estar, escuchar y ayudar a que cada persona encuentre en el gimnasio su espacio.</p>
+                        <div class="member-socials">
+                            <a href="https://wa.me/5491162089808" target="_blank" rel="noopener noreferrer"
+                                class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><br>
+                            <a href="https://instagram.com/psicodep.ok" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVIDADES Y CURSOS SECTION -->
+    <section id="actividades" class="activities-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">¿Qué hacemos?</span>
+                <h2 class="section-title">ACTIVIDADES Y CURSOS</h2>
+                <div class="divider"></div>
+                <p class="section-description">Nuestra propuesta de entrenamiento abarca desde la salud general hasta el
+                    alto rendimiento competitivo.</p>
+            </div>
+
+            <div class="activities-grid">
+
+                <!-- Fuerza -->
+                <div class="activity-card glass-card fade-in-up">
+                    <div class="activity-card-image">
+                        <img src="assets/space/compressed/IMG_5752.webp" alt="Fuerza y Musculación BG360"
+                            class="activity-img">
+                    </div>
+                    <div class="activity-card-content">
+                        <h3>Fuerza & Musculación</h3>
+                        <p>Diseño de rutinas a medida para desarrollo de masa muscular, ganancia de fuerza básica y
+                            acondicionamiento adaptado a tu nivel inicial.</p>
+                    </div>
+                </div>
+
+                <!-- Powerlifting -->
+                <div class="activity-card glass-card fade-in-up">
+                    <div class="activity-card-image">
+                        <img src="assets/space/compressed/IMG_5245.webp" alt="Powerlifting y Parapowerlifting BG360"
+                            class="activity-img">
+                    </div>
+                    <div class="activity-card-content">
+                        <h3>Powerlifting & Parapowerlifting</h3>
+                        <p>Enseñanza técnica y programación avanzada para los tres movimientos básicos: sentadilla,
+                            banco plano y peso muerto, con preparación para competencia.</p>
+                    </div>
+                </div>
+
+                <!-- NUEVA TARJETA -->
+                <div class="activity-card glass-card fade-in-up">
+                    <div class="activity-card-image">
+                        <img src="assets/trainers/fran2.webp" alt="Levantamiento Olímpico de Pesas BG360"
+                            class="activity-img">
+                    </div>
+                    <div class="activity-card-content">
+                        <h3>Levantamiento Olímpico de Pesas</h3>
+                        <p>Aprendé y perfeccioná el arranque (Snatch) y el envión (Clean & Jerk) con enseñanza técnica,
+                            progresiones y planificación para todos los niveles.</p>
+                    </div>
+                </div>
+
+                <!-- Montaña -->
+                <div class="activity-card glass-card fade-in-up">
+                    <div class="activity-card-image">
+                        <img src="assets/space/compressed/IMG_5353-2.webp" alt="Entrenamiento de Montaña BG360"
+                            class="activity-img">
+                    </div>
+                    <div class="activity-card-content">
+                        <h3>Entrenamiento de Montaña</h3>
+                        <p>Preparación física orientada a montañistas, corredores de trail y entusiastas del aire libre
+                            en la Patagonia, potenciando resistencia y estabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Salud -->
+                <div class="activity-card glass-card fade-in-up">
+                    <div class="activity-card-image">
+                        <img src="assets/space/compressed/IMG_5511.webp" alt="Deporte y Salud BG360"
+                            class="activity-img">
+                    </div>
+                    <div class="activity-card-content">
+                        <h3>Deporte y Salud</h3>
+                        <p>Adaptación del entrenamiento a deportes específicos, prevención de lesiones y rehabilitación
+                            en constante comunicación con profesionales de la salud.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cursos/Talleres -->
+        <div class="workshops-container section-padding-top">
+            <h3 class="sub-section-title text-center fade-in-up">PRÓXIMOS EVENTOS Y CAPACITACIONES</h3>
+            <p class="sub-section-desc text-center fade-in-up">Ampliamos el conocimiento físico y mental con
+                seminarios dictados por referentes.</p>
+
+            <div class="workshops-grid">
+
+                <div class="workshop-card glass-card fade-in-up">
+                    <div class="workshop-date">
+                        <span class="day">24</span>
+                        <span class="month">OCT</span>
+                    </div>
+                    <div class="workshop-content">
+                        <span class="workshop-tag">Programación de Fuerza</span>
+                        <h4>Programación de Fuerza Avanzada</h4>
+                        <p class="workshop-meta"><i class="fa-solid fa-user"></i> Ezequiel Costa &nbsp;|&nbsp; <i
+                                class="fa-solid fa-location-dot"></i> BG360 San Martín</p>
+                        <p class="workshop-desc">Seminario teórico-práctico presencial sobre la dosificación de la
+                            carga.</p>
+                        <a href="https://wa.me/5491132422219" target="_blank" rel="noopener noreferrer"
+                            class="workshop-link"><i class="fa-solid fa-circle-info"></i> Inscribirse (WhatsApp)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- HORARIOS SECTION -->
+    <section id="horarios" class="schedule-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Planifica tu semana</span>
+                <h2 class="section-title">NUESTROS HORARIOS</h2>
+                <div class="divider"></div>
+                <p class="section-description">El gimnasio se encuentra abierto de corrido con una pausa al mediodía
+                    para que entrenes con flexibilidad.</p>
+            </div>
+
+            <div class="schedule-card glass-card fade-in-up">
+                <div class="schedule-main-info">
+                    <div class="hours-badge">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>08:00 A 12:00 | 13:00 A 21:30 HS</span>
+                    </div>
+                    <h3>LUNES A VIERNES</h3>
+                    <p>Reserva tu bloque de entrenamiento a través de la app <strong>SIGUE FIT</strong>.</p>
+                </div>
+                <div class="schedule-divider"></div>
+                <div class="schedule-details">
+                    <div class="detail-row">
+                        <span class="day-label">Lunes a Viernes:</span>
+                        <span class="time-value">Bloques disponibles cada 1h</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="day-label">Sábados, Domingos y Feriados:</span>
+                        <span class="time-value closed">Cerrado</span>
+                    </div>
+                    <div class="detail-row info-row">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Los turnos fijos se reservan con antelación y están sujetos al cupo del entrenador asignado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS SECTION (REFACTORIZADA COMPLETAMENTE) -->
+    <section id="precios" class="pricing-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Planes de Membresía</span>
+                <h2 class="section-title">TARIFAS Y ABONOS</h2>
+                <div class="divider"></div>
+                <p class="section-description">Elegí la modalidad que mejor se adapte a tu ritmo. Todos los planes
+                    mensuales cuentan con entrenamiento planificado y acompañamiento directo.</p>
+
+                <!-- Segmented Control de Planes -->
+                <div class="segmented-control" id="segmentedControl">
+                    <button type="button" class="segmented-btn active" id="btnModeMensual" data-mode="mensual">
+                        Planes Mensuales
+                    </button>
+
+                    <button type="button" class="segmented-btn" id="btnModeFlexi" data-mode="flexi">
+                        Flexi Pass
+                    </button>
+
+                    <button type="button" class="segmented-btn" id="btnModeOnline" data-mode="online">
+                        Entrenamiento Online
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARDS CONTAINER (TRANSICION SUAVE SIN SALTOS) -->
+            <div class="pricing-cards-wrapper" id="pricingCardsWrapper">
+
+                <!-- GRUPO 1: PLANES MENSUALES -->
+                <div class="pricing-group active" id="groupMensual">
+                    <div class="pricing-grid">
+
+                        <!-- 1 vez por semana -->
+                        <div class="price-card glass-card">
+                            <div class="card-header">
+                                <h3>1 vez por semana</h3>
+                                <p class="card-desc">Ideal para complementar otras disciplinas deportivas.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">95.000</span>
+                                <span class="period">/ mes</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> 1 clase semanal (4 a 5 al mes)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Entrenamiento planificado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Seguimiento general incluido</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ajustes individuales incluidos</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                        <!-- 2 veces por semana -->
+                        <div class="price-card glass-card">
+                            <div class="card-header">
+                                <h3>2 veces por semana</h3>
+                                <p class="card-desc">Frecuencia recomendada para ganancia de fuerza y salud.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">118.000</span>
+                                <span class="period">/ mes</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> 2 clases semanales (8 a 9 al mes)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Entrenamiento planificado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Seguimiento general incluido</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ajustes individuales incluidos</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                        <!-- 3 veces por semana -->
+                        <div class="price-card glass-card">
+                            <div class="card-header">
+                                <h3>3 veces por semana</h3>
+                                <p class="card-desc">Progresión sólida y adaptaciones continuas de rendimiento.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">145.000</span>
+                                <span class="period">/ mes</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> 3 clases semanales (12 a 13 al mes)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Entrenamiento planificado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Seguimiento general incluido</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ajustes individuales incluidos</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                        <!-- 4 o más veces por semana -->
+                        <div class="price-card glass-card">
+                            <div class="card-header">
+                                <h3>4+ veces por semana</h3>
+                                <p class="card-desc">Pase libre completo para atletas y entrenamiento intensivo.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">166.000</span>
+                                <span class="period">/ mes</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Pase libre (4 o más días/semana)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Entrenamiento planificado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Seguimiento general incluido</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ajustes individuales incluidos</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- GRUPO 2: FLEXI PASS -->
+                <div class="pricing-group" id="groupFlexi">
+                    <div class="flexi-grid">
+
+                        <!-- Flexi Pass 2 clases -->
+                        <div class="price-card glass-card flexi-card">
+                            <div class="card-header">
+                                <h3>Flexi Pass (2 Clases)</h3>
+                                <p class="card-desc">Pases sueltos con máxima flexibilidad horaria.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">56.000</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Pack de 2 clases individuales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sin horarios fijos semanales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Válido por 60 días desde la compra</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Reserva de turnos vía app Sigue Fit</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                        <!-- Flexi Pass 3 clases -->
+                        <div class="price-card glass-card flexi-card">
+                            <div class="card-header">
+                                <h3>Flexi Pass (3 Clases)</h3>
+                                <p class="card-desc">Ideal para estadías temporales o agendas variables.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">70.000</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Pack de 3 clases individuales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sin horarios fijos semanales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Válido por 60 días desde la compra</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Reserva de turnos vía app Sigue Fit</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                        <!-- Flexi Pass 4 clases -->
+                        <div class="price-card glass-card flexi-card">
+                            <div class="card-header">
+                                <h3>Flexi Pass (4 Clases)</h3>
+                                <p class="card-desc">Entrenamiento flexible de acuerdo a tu disponibilidad.</p>
+                            </div>
+                            <div class="card-price">
+                                <span class="currency">$</span>
+                                <span class="amount">85.000</span>
+                            </div>
+                            <ul class="card-features">
+                                <li><i class="fa-solid fa-circle-check"></i> Pack de 4 clases individuales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sin horarios fijos semanales</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Válido por 60 días desde la compra</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Reserva de turnos vía app Sigue Fit</li>
+                            </ul>
+                            <a href="#inscripcion" class="btn btn-primary btn-block">Asociarme</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- GRUPO 3: ENTRENAMIENTO ONLINE -->
+                <div class="pricing-group" id="groupOnline">
+                    <div class="online-grid">
+
+                        <div class="price-card glass-card featured-online">
+
+                            <div class="card-header">
+                                <h3>Entrenamiento Online</h3>
+                                <p class="card-desc">
+                                    Planificación 100% personalizada para entrenar desde cualquier lugar,
+                                    con seguimiento permanente y acompañamiento de nuestro equipo.
+                                </p>
+                            </div>
+
+                            <div class="online-steps">
+                                <h4>¿Cómo funciona?</h4>
+
+                                <div class="step">
+                                    <span>1</span>
+                                    <div>
+                                        <strong>Entrevista inicial</strong>
+                                        <p>Conocemos tus objetivos, experiencia, disponibilidad y equipamiento.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <span>2</span>
+                                    <div>
+                                        <strong>Plan personalizado</strong>
+                                        <p>Recibís una planificación mensual adaptada a vos y a tu progreso.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <span>3</span>
+                                    <div>
+                                        <strong>Seguimiento continuo</strong>
+                                        <p>Comunicación permanente para resolver dudas y ajustar el entrenamiento cuando
+                                            sea necesario.</p>
+                                    </div>
+                                </div>
+
+                                <div class="step">
+                                    <span>4</span>
+                                    <div>
+                                        <strong>Reuniones de seguimiento</strong>
+                                        <p>Evaluamos avances y realizamos los ajustes necesarios para seguir
+                                            progresando.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="online-benefits">
+                                <h4>Incluye</h4>
+
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Planificación mensual personalizada.
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Seguimiento y comunicación permanente.
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Ajustes según tu evolución.</li>
+
+                                </ul>
+                            </div>
+
+                            <a href="https://wa.me/5492944824123" class="btn btn-primary btn-block">
+                                Consultanos por el plan online
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOQUE INFORMATIVO OPEN BOX -->
+            <div class="open-box-banner glass-card fade-in-up">
+                <div class="open-box-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                <div class="open-box-content">
+                    <h4>OPEN BOX</h4>
+                    <p>Consultar por modalidad OPEN BOX para uso libre de instalaciones e instrumental de fuerza.</p>
+                </div>
+            </div>
+
+            <!-- OTROS SERVICIOS -->
+            <div class="other-services-container section-padding-top fade-in-up">
+                <div class="other-services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-user-check"></i></div>
+                        <h4>Clase de Prueba</h4>
+                        <div class="service-price">$30.000</div>
+                        <p>Evaluación técnica inicial, recorrido por las instalaciones y clase guiada con coach
+                            certificado.</p>
+                        <a href="#inscripcion" class="btn btn-secondary btn-sm">Asociarme</a>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h4>Planificación Personalizada</h4>
+                        <div class="service-price">$54.000 <span>/ mes</span></div>
+                        <p>Programa digital a distancia con soporte constante en Telegram para entrenar en cualquier
+                            gimnasio del mundo.</p>
+                        <a href="#inscripcion" class="btn btn-secondary btn-sm">Asociarme</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NUESTRO ESPACIO (FACILITIES) SECTION -->
+    <section id="espacio" class="facilities-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Instalaciones</span>
+                <h2 class="section-title">NUESTRO ESPACIO</h2>
+                <div class="divider"></div>
+                <p class="section-description">Equipamiento técnico premium de primer nivel para entrenar de forma
+                    óptima sin esperas innecesarias.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5501-2.webp" alt="Racks y Tarimas de Levantamiento BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5188.webp" alt="Discos y Barras Olímpicas BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5070.webp" alt="Mancuernas y Kettlebells BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5073.webp" alt="Área de Entrenamiento Principal BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5088-2.webp" alt="Zona de Fuerza y Musculación BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5136.webp" alt="Equipamiento Técnico Premium BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5183.webp" alt="Espacio de Acondicionamiento BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5267.webp" alt="Maquinaria e Instrumental Deportivo BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5752.webp" alt="Plataformas de Entrenamiento BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5416-2.webp" alt="Zona de Calentamiento y Movilidad BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_5245.webp" alt="Sector de Powerlifting BG360"
+                        class="gallery-img">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/space/compressed/IMG_7087.webp" alt="Centro de Entrenamiento Neuromuscular BG360"
+                        class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INSCRIPCION Y APP SECTION -->
+    <section id="inscripcion" class="join-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Unite al equipo</span>
+                <h2 class="section-title">¿QUERÉS FORMAR PARTE DE BG360°?</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="join-card glass-card fade-in-up">
+                <!-- Bloque izquierdo: Inscripción -->
+                <div class="join-block join-block--left">
+                    <div class="join-icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <h3>Inscribíte</h3>
+                    <p>Completá el formulario de inscripción oficial para dar el primer paso. Te asignamos un entrenador
+                        y definimos tu objetivo.</p>
+                    <a href="https://forms.gle/vRmYB5a8Jy3EodJN8" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary btn-lg join-btn" id="btnInscripcion"
+                        aria-label="Ir al formulario de inscripción">
+                        <i class="fa-solid fa-pen-to-square"></i> INSCRIBIRME
+                    </a>
+                    <p class="join-note">Formulario de registro online abierto.</p>
+                </div>
+
+                <!-- Divisor vertical -->
+                <div class="join-separator">
+                    <div class="join-sep-line"></div>
+                    <div class="join-sep-circle"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="join-sep-line"></div>
+                </div>
+
+                <!-- Bloque derecho: App -->
+                <div class="join-block join-block--right">
+                    <div class="join-icon join-icon--app">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>¿Ya estás inscripto?</h3>
+                    <p>Gestioná tus turnos y reservas de clases directamente desde <strong>SIGUE FIT</strong>. Elegí
+                        días y horarios de forma simple.</p>
+                    <button id="btnSigueFit" class="btn btn-secondary btn-lg join-btn">
+                        <i class="fa-solid fa-mobile-screen-button"></i> DESCARGAR LA APP
+                    </button>
+                    <p class="join-note">Disponible para iOS y Android.</p>
+                </div>
+            </div>
+
+            <!-- Paso a paso -->
+            <div class="join-steps fade-in-up">
+                <div class="join-step">
+                    <div class="step-num">1</div>
+                    <div class="join-step-text">
+                        <h5>Inscripción</h5>
+                        <p>Completá el formulario online.</p>
+                    </div>
+                </div>
+                <div class="join-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="join-step">
+                    <div class="step-num">2</div>
+                    <div class="join-step-text">
+                        <h5>Asignación</h5>
+                        <p>Te asignamos un coach según tu objetivo.</p>
+                    </div>
+                </div>
+                <div class="join-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="join-step">
+                    <div class="step-num">3</div>
+                    <div class="join-step-text">
+                        <h5>Descargá la App</h5>
+                        <p>Instalá Sigue Fit con tu email de registro.</p>
+                    </div>
+                </div>
+                <div class="join-step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="join-step">
+                    <div class="step-num">4</div>
+                    <div class="join-step-text">
+                        <h5>Reservá tus turnos</h5>
+                        <p>Elegí días y horarios desde la app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ / POLITICAS SECTION -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Preguntas Frecuentes</span>
+                <h2 class="section-title">Preguntas</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-accordion-container fade-in-up">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>¿Cómo y cuándo se realizan los pagos de la cuota mensual?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Se abona por mes calendario y por adelantado del 1 al 10, según la cantidad de clases
+                            semanales elegidas. Si empezás después de mitad de mes, podés optar por un Flexi Pass (de 2
+                            a 4 clases) o abonar el mes completo para disponer de todos los turnos del paquete y
+                            asegurar tu horario fijo.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>¿Cuál es la política para nuevos miembros y reservas?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Para sumarte, primero debés completar la ficha de inscripción y consultar la disponibilidad
+                            horaria; luego, para asegurar tu lugar en el horario elegido, es necesario abonar una seña
+                            que se descontará del total de tu cuota mensual.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>¿Cómo funciona la cancelación del servicio?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>La baja debe avisarse antes de fin de mes para que el horario quede disponible. Si se informa
+                            una vez iniciado el mes siguiente, la cuota debe abonarse completa, ya que ese espacio se
+                            mantuvo reservado.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>¿Se pueden recuperar las clases perdidas por vacaciones o enfermedad?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sí, se pueden recuperar dentro de un plazo de 60 días según la disponibilidad en la app. Para
+                            acceder a este beneficio es requisito mantener activo el abono mensual con turno fijo (no
+                            aplica al cambiar a Flexi Pass o darse de baja).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>¿Cómo funciona el servicio de Planificación Online?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Inicia con una entrevista para conocer tus objetivos y armar tu plan personalizado. El
+                            servicio se abona por adelantado y la planificación se entrega en un plazo de hasta cinco
+                            días. Incluye seguimiento, entrevistas y ajustes según tu evolución para el mes siguiente.
+                            La cuota es mensual fija: se abona mes a mes independientemente de si se entrenó o no, ya
+                            que el servicio y la planificación estuvieron a disposición durante todo el período.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA MINI SECCION — ALIANZAS / ASOCIADOS -->
+    <section id="alianzas" class="alliances-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Comunidad &amp; Alianzas</span>
+                <h2 class="section-title">NUESTRAS ALIANZAS</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="alliance-banner glass-card fade-in-up">
+                <div class="alliance-logo-wrap">
+                    <img src="assets/chilco.png" alt="Chilco Experiencias de Montaña" class="alliance-logo">
+                </div>
+                <div class="alliance-info">
+                    <h3>Chilco Experiencias de Montaña</h3>
+                    <p>¡Nos asociamos con <strong>Chilco Experiencias de Montaña</strong>! Si realizás actividades de
+                        montaña en la Patagonia y querés prepararte físicamente para afrontar cada desafío, en BG360°
+                        vas a encontrar planificación específica de fuerza y acondicionamiento adaptado a los
+                        requerimientos del terreno alpino y actividades outdoor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+
+                <h3 class="footer-brand-name">BG360</h3>
+
+                <p>
+                    Centro de Entrenamiento neuromuscular enfocado en la fuerza,
+                    levantamiento de pesas, prevención de lesiones y acompañamiento psicológico en la Patagonia
+                    Argentina.
+                </p>
+
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/bg360.ok" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/5492944824123" target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="footer-col info-col">
+                <h4>Contacto e Información</h4>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Av. Koessler 1992, San Martín de los Andes, Neuquén.
+                </p>
+
+                <a href="https://maps.google.com/?q=Av.+Koessler+1992,+San+Martín+de+los+Andes,+Neuquén" target="_blank"
+                    rel="noopener noreferrer" class="map-link">
+                    <iframe
+                        src="https://www.google.com/maps?q=Av.+Koessler+1992,+San+Martín+de+los+Andes,+Neuquén&output=embed"
+                        width="100%" height="180" style="border:0; border-radius:16px;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </a>
+
+                <p><i class="fa-brands fa-whatsapp"></i> +54 9 2944 82-4123</p>
+                <p><i class="fa-solid fa-clock"></i> Lunes a viernes de 8:00 a 21:30 hs</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-layout">
+                <p>BG 360° Centro de Entrenamiento</p>
+                <p>Diseño y desarrollo web © <a href="https://tuwebsma.github.io" target="_blank"
+                        rel="noopener noreferrer" style="color: var(--accent-cyan);">Tu Web Sma</a>. Todos los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL FOR APP DOWNLOAD -->
+    <div id="downloadModal" class="modal-overlay">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3>Descargar SIGUE FIT</h3>
+            <p>Elige tu plataforma móvil para descargar la aplicación de reservas oficiales del gimnasio.</p>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/ar/app/sigue-fit/id1455246726" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary"><i class="fa-brands fa-apple"></i> App Store (iOS)</a>
+                <a href="https://play.google.com/store/apps/details?id=com.siguefit.app" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-google-play"></i> Play
+                    Store (Android)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRAINER CAROUSEL MODAL -->
+    <div id="trainerCarouselModal" class="trainer-carousel-overlay">
+        <button class="trainer-carousel-close" id="trainerCarouselClose" aria-label="Cerrar carrusel">&times;</button>
+        <button class="trainer-carousel-arrow trainer-carousel-prev" id="trainerCarouselPrev"
+            aria-label="Imagen anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="trainer-carousel-viewport" id="trainerCarouselViewport">
+            <div class="trainer-carousel-track" id="trainerCarouselTrack"></div>
+        </div>
+        <button class="trainer-carousel-arrow trainer-carousel-next" id="trainerCarouselNext"
+            aria-label="Imagen siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="trainer-carousel-dots" id="trainerCarouselDots"></div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
