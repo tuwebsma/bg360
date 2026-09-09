@@ -279,10 +279,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "assets/trainers/mora1.webp",
             "assets/trainers/mora2.webp",
             "assets/trainers/mora3.webp",
-            "assets/trainers/IMG_2221.PNG",
-            "assets/trainers/IMG_3757.JPEG",
-            "assets/trainers/IMG_3760.JPEG",
-            "assets/trainers/IMG_3771.JPEG"
+            "assets/trainers/IMG_2221.webp",
+            "assets/trainers/IMG_3757.webp",
+            "assets/trainers/IMG_3760.webp",
+            "assets/trainers/IMG_3771.webp"
 
         ],
         mauro: [
