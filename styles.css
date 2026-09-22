@@ -2515,3 +2515,12 @@ textarea {
     }
 
 }
+.footer-credit-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-credit-link:hover {
+  color: var(--accent-cyan);
+}
